@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Enrollment Form</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+
+    </head>
+
+    <body>
+        <div class="container">
+
+            <h1>Student Enrollment form</h1>
+            <br>
+            <form id="form" method="POST">
+                <div class="form-group">
+                    <span><label for="empId">Employee ID:</label><label id="rollnoMsg"></label></span>
+                    <input type="text" class="form-control" name="empID" id="empId" placeholder="Enter Employee ID"
+                           required>
+                </div>
+                <div class="form-group">
+                    <span><label for="name">Employee Name:</label></span>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter Employee name" required>
+                </div>
+                <div class="form-group">
+                    <span><label for="empSalary">Basic Salary:</label></span>
+                    <input type="text" class="form-control" name="empSalary" id="empSalary" placeholder="Enter Basic Salary" required>
+                </div>
+                <div class="form-group">
+                    <span><label for="empHRA">HRA:</label></span>
+                    <input type="text" class="form-control" name="empHRA" id="empHRA" placeholder="Enter Employee HRA"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <span><label for="empDA">DA:</label></span>
+                    <input type="text" class="form-control" name="empDA" id="empDA" placeholder="Enter Employee DA"
+                           required>
+                </div>
+                <div class="form-group">
+                    <span><label for="empDeduction">Deduction:</label></span>
+                    <input type="text" class="form-control" name="empDeduction" id="empDeduction"
+                           placeholder="Enter Deduction" required>
+                </div>
+                <br>
+                <input type="button" class="btn btn-primary" id="savebutton" value="Save" onclick=RegisterStudent()>
+                <input type="button" class="btn btn-primary" id="update" value="Update" onclick=UpdateStudent()>
+                <input type="button" class="btn btn-primary" id="reset" value="Reset" onclick=resetForm()>
+
+            </form>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+        <script src="index.js"></script>
+    </body>
+
+</html>
